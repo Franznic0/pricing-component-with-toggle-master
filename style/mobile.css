@@ -1,0 +1,84 @@
+@media screen and (max-width: 1024px) {
+
+    .pricing-toggle h1 {
+        font-size: 1.7rem;
+    }
+
+    .price h1 span {
+        font-size: 2.7rem;
+    }
+
+    .subscription {
+        padding: 1rem 1.5rem;
+    }
+
+    .description li {
+        padding: 1rem;
+    }
+
+    .professional {
+        padding-top: 2.6rem;
+    }
+
+    .link {
+        letter-spacing: .1rem;
+    }
+
+    .learn-more {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    
+    .subscriptions {
+        font-size: 10px;
+    }
+
+    .pricing-toggle {
+        width: 80%;
+    }
+
+    #switch {
+        width: 3rem;
+        height: 1.5rem;
+    }
+
+    #switch::before {
+        width: 1.1rem;
+        height: 1.1rem;
+        top: 3px;
+        right: 4px;
+    }
+
+    #switch:checked::before {
+        right: 55%;
+    }
+
+    .subscriptions {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+
+        box-shadow: none;
+    }
+
+    .subscription {
+        box-shadow: 0 0 50px 0 var(--Light-Grayish-Blue);
+    }
+
+    .professional {
+        height: 100%;
+        padding-top: 1.5rem;
+
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+
+    .attribution {
+        margin-top: 2rem;
+    }
+}
