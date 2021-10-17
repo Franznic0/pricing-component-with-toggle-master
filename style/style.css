@@ -131,7 +131,7 @@ main {
 
 .subscriptions {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 20rem);
 
     margin: auto;
 
@@ -165,7 +165,7 @@ main {
 /* Price */
 
 .price {
-    padding: 1.5rem;
+    margin: 1.5rem auto;
 }
 
 .price p {
@@ -179,7 +179,7 @@ main {
 }
 
 .price h1 span {
-    font-size: 3em;
+    font-size: 2.5em;
     margin: auto .5rem;
 }
 
@@ -217,6 +217,14 @@ main {
     -o-border-radius: 5px;
     
     background: var(--Linear-Gradient);
+    
+    border: 1px solid var(--White);
+    
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
 }
 
 .learn-more:hover {
@@ -257,9 +265,15 @@ main {
 }
 
 .professional .learn-more {
-    border: 1px solid;
+    border: 1px solid transparent;
 
     background: var(--White);
+    
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
 }
 
 .professional .link {

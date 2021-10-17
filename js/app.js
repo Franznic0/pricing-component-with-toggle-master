@@ -1,8 +1,21 @@
-const switchButton = document.getElementById("switch");
-const monthPrice = document.querySelectorAll("month-price");
-const yearPrice = document.querySelectorAll("year-price");
+var switchButton = document.getElementById("switch");
+var monthPrice = document.querySelectorAll(".month-price");
+var yearPrice = document.querySelectorAll(".year-price");
 
-console.log(switchButton);
+function switchPrice() {
 
-monthPrice.array.forEach(element => {
-});
+    for (i=0; i <= monthPrice.length; i++) {
+
+        if (switchButton.checked) {
+            
+            monthPrice[i].style.display = "none"
+            yearPrice[i].style.display = "block"
+        
+        } else {
+            
+            monthPrice[i].style.display = "block"
+            yearPrice[i].style.display = "none"
+
+        }
+    }
+}
