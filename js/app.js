@@ -1,21 +1,28 @@
 var switchButton = document.getElementById("switch");
-var monthPrice = document.querySelectorAll(".month-price");
-var yearPrice = document.querySelectorAll(".year-price");
+var basic = document.getElementById("basic");
+var professional = document.getElementById("professional");
+var master = document.getElementById("master");
+var monthPrice = document.querySelectorAll(".month-price")
+
 
 function switchPrice() {
 
-    for (i=0; i <= monthPrice.length; i++) {
-
         if (switchButton.checked) {
             
-            monthPrice[i].style.display = "none"
-            yearPrice[i].style.display = "block"
+            basic.innerHTML = "199.99";
+            professional.innerHTML = "249.99";
+            master.innerHTML = "399.99";
         
         } else {
             
-            monthPrice[i].style.display = "block"
-            yearPrice[i].style.display = "none"
-
+            basic.innerHTML = "19.99";
+            professional.innerHTML = "24.99";
+            master.innerHTML = "39.99";
+        
         }
-    }
+    
 }
+
+switchButton.addEventListener('change' , switchPrice());
+
+switchPrice();
