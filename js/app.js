@@ -2,7 +2,7 @@ var switchButton = document.getElementById("switch");
 var basic = document.getElementById("basic");
 var professional = document.getElementById("professional");
 var master = document.getElementById("master");
-var monthPrice = document.querySelectorAll(".month-price")
+var monthPrice = document.querySelectorAll(".show-price")
 
 
 function switchPrice() {

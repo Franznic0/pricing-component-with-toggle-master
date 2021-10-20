@@ -22,6 +22,10 @@
     --White: hsl(0, 0%, 100%);
 }
 
+h1, h2, p, li, .attribution {
+    cursor: default;
+}
+
 main {
     position: relative;
     display: flex;
@@ -174,17 +178,13 @@ main {
     color: var(--Grayish-Blue);
 }
 
-.price h1 {
+.show-price {
     font-size: 1.5rem;
 }
 
-.price h1 span {
+.show-price span {
     font-size: 2.5em;
     margin: auto .5rem;
-}
-
-.year-price {
-    display: none;
 }
 
 /* Description */
