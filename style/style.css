@@ -76,7 +76,7 @@ main {
     margin: 2rem auto;
 }
 
-.toggle-selection p {
+.toggle-selection p, label {
     color: var(--Light-Grayish-Blue);
 }
 
